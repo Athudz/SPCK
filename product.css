@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+  
+  }
+  .container{
+    width: 100%;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/72/666/566/sparks-optical-illusion-dark-background-wallpaper-preview.jpg);
+    height: 200vh;
+    padding-top: 22vh;
+    color: #ffff;
+  }
+  /* navbar */
+  a{
+    text-decoration: none;
+  }
+  .navbar-container{ 
+      width: 100%;
+      z-index: 99;
+    margin: auto;
+  position: fixed;
+  background-color: #2b2a2c;
+  align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .navbar-logo{
+      width: 100%;
+      height:60%;
+      background-color: #532b9a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .navbar-logo img{
+      width: 200px;
+      height: 100px;
+  
+  }
+  .navbar-info{
+      width: 100%;
+      height: 40%;
+   
+      display: flex;
+      color: #ffff;
+      align-items: center;
+      
+  }
+  .navbar-ingre{
+      width: 73%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+  }
+  .navbar-ele{
+      width: auto;
+      height: 100%;
+      color: #ffff;
+      align-items: center;
+      display: flex;
+      padding: 20px;
+      cursor: pointer;
+  }
+  .navbar-ele:hover{
+    color: #fdf583;
+  }
+  .navbar-search{
+      width: 40%;
+      height: 90%;
+      margin: auto;
+      border: 2px black solid;
+      border-radius: 7px;
+      font-size: 20px;
+      display: flex;
+      color: black;
+      align-items: center;
+      background-color:white;
+  }
+  .navbar-search input{
+      width: 90%;
+      height: 100%;
+      border: 0px;
+      border-radius: 7px;
+      padding: 10px;
+  }
+  
+  .navbar-account{
+      width: 27%;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      color: #ffffff;
+      cursor: pointer;
+      
+  }
+  .navbar-account:hover{
+    color: #fdf583;
+  }
+  .navbar-account span{
+      width: auto;
+      height: 100%;
+      align-items: center;
+      display: flex;
+  
+      padding: 20px;
+  
+  }
+  .account{
+      padding: 7px;
+  }
+  .navbar-account button{
+      width: auto;
+      height: 30px;
+      color: #ffff;
+      display: flex;
+      align-items: center;
+      background-color: #532b9a;
+      padding: 20px;
+      border: 0;
+      border-radius: 5px;
+  }
+  .navbar-account button p{
+      margin: 5px;
+  }
+  
+  
+  /* navbar */
+  #box-render{
+    width: 100%;
+    height: 90vh;
+  }
+.product{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  gap: 10px;
+  color: #ffff;
+}
+.product-img{
+  width: 60%;
+  height: 100%;
+  background-color:#000000;
+
+}
+.product-img img{
+  width: 100%;
+  height: 100%;
+}
+.product-inf{
+  width: 40%;
+  height: 100%;
+  padding: 50px 30px 30px 30px;
+ 
+  justify-content: space-around;
+}
+.add-qtt{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  background-color:#2b2a2c;
+  border: 1px solid #757376;
+  color: #ffff;
+}
+.value-button{
+  width: 25%;
+height: 100%;
+border: 1px solid #757376;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#number{
+  width: 50%;
+  height: 100%;
+  background-color: #2b2a2c;
+  color: #ffff;
+  text-align: center;
+}
+.atc-button{
+  width: 200px;
+  height: 40px;
+  color: #ffff;
+  border: 1px solid #a2a1a1;
+  border-radius: 7px;
+  font-size: 18px;
+  margin: 20px 0px 20px 0px;
+background-color: #532b9a;
+
+}
+.type{
+  width: 200px;
+    height: 40px;
+    background-color: #121212;
+    border: 1px solid #ffff;
+    color: #ffff;
+    font-size: 18px;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 7px;
+  
+    padding: 10px;
+}
+.yml{
+  width: 100%;
+  height: 60vh;
+  background-color: #121212;
+  opacity: 0.8;
+ padding: 20px;
+}
+.card{
+  width: 23%;
+  gap: 5px;
+  height: 55vh;
+  padding: 15px;
+  border: 1px solid #532b9a;
+  background-color: #2b2a2c;
+  border-radius: 7px;
+
+}
+.card-img{
+  width: 100%;
+  height: 55%;
+margin: auto;
+}
+.card-img img{
+  width: 100%;
+  height: 100%;
+
+}
+.card-content{
+  width: 100%;
+  height:30% ;
+
+}
+.card-btn{
+  width: 100%;
+  height: 15%;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.atc-btn{
+  width: 90%;
+  height: 40px;
+  color: #ffff;
+  border: 1px solid #ffff;
+  border-radius: 7px;
+  font-size: 18px;
+background-color: #532b9a;
+
+}
+  /* footer */
+
+  .footer-container{
+    width: 100%;
+    height: 25vh;
+    background-color: #2b2a2c;
+}
+.footer-basic {
+    padding:40px ;
+    background-color:#2b2a2c;
+    color:#ffffff;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display: flex;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  /* footer */
