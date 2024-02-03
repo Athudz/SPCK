@@ -109,6 +109,10 @@
       padding: 20px;
   
   }
+  .navbar-account span:hover{
+    color: #fdf583;
+  
+  }
   .account{
       padding: 7px;
   }
@@ -172,10 +176,11 @@
     justify-content: space-around;
     gap: 10px;
     padding-top: 30px;
+    padding-bottom: 60px;
   }
   .card{
     width: 24%;
-    gap: 5px;
+    margin-bottom: 7px;
     height: 60vh;
     padding: 15px;
     border: 1px solid #532b9a;

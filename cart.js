@@ -1,34 +1,37 @@
-let cart = localStorage.getItem("cart");
-cart = JSON.parse(cart);
-console.log(cart)
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-for (let key in cart) {
-    let items = cart[key].product;
-    console.log(items)
-    let card = document.createElement("div");
-    card.classList.add("card");
-    card.innerHTML = `
+// Path: cart.js
+const cart_render = document.getElementById("cart-render");
+var total =0;
+for (const item of cart) {
+    const priceTotal = item.product.price * item.quantity;
+    total += priceTotal;
+  let cart_item = document.createElement("div");
+  cart_item.classList.add("card");
+  cart_item.innerHTML = `
     <div class="card-inf">
     <input type="checkbox">
     <div class="card-img">
-        <img src="${items.img}" alt="">
+        <img src="${item.product.img}" alt="">
     </div>
     <div class="card-des">
-        <h4>${items.name}</h4>
-        <h3>$${items.price}</h3>
+        <h4>${item.product.name}</h4>
+        <h3>Giá: $${item.product.price}</h3>
     </div>
-</div>
-<div class="product-inf">                        
-    <div class="quantity"> 
-        <div class="add-qtt">
-            <div class="value-button decrease_" id="" value="Decrease Value">-</div>
-             <input type="number" name="qty" id="number" value="1"/>
-             <div class="value-button increase_" id="" value="Increase Value"><b>+</b></div>
-            
-         
     </div>
-
-</div>
-                         <div class="price-total">$${items.price}</div>`;
-    document.getElementById("products").appendChild(card);
-  }
+    <div class="product-inf">
+    <div class="quantity">
+    ${item.quantity}
+    </div>
+    <div class="price-total">$${priceTotal}</div>
+    </div>
+        `;
+  cart_render.appendChild(cart_item);
+}
+document.getElementById("total-price").innerHTML = `$ ${total.toPrecision(5)}`;
+document.getElementById("btn-pay").addEventListener("click", () => {
+  localStorage.removeItem("cart");
+  cart_render.innerHTML = "";
+  document.getElementById("total-price").innerHTML = "$ 0";
+  alert("Thank you for your purchase!");
+});

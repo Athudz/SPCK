@@ -109,6 +109,10 @@ align-items: center;
     padding: 20px;
 
 }
+.navbar-account span:hover{
+  color: #fdf583;
+
+}
 .account{
     padding: 7px;
 }
