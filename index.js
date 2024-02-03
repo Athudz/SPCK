@@ -78,29 +78,4 @@ var data = [
     main.appendChild(item_div);
   }
 
-var currentIndex = 0;
 
-function slide(direction) {
-    var totalItems = data.length;
-    var itemsPerPage = 3;
-    var totalPages = Math.ceil(totalItems / itemsPerPage);
-
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex >= totalPages) {
-        currentIndex = totalPages - 1;
-    }
-
-    var translateValue = -100 * currentIndex;
-    main.style.transform = `translateX(${translateValue}%)`;
-}
-
-document.getElementById("slide-left").addEventListener("click", function() {
-    slide(-1);
-});
-
-document.getElementById("slide-right").addEventListener("click", function() {
-    slide(1);
-});

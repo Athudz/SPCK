@@ -180,8 +180,41 @@ var data = [
             <p class="price"  style=" font-size: 20px;  margin:10px;">$${item.price}</p>
         </div>
         <div class="card-btn">
-            <button class="atc-btn">Add To Cart</button>
+            <button class="atc-btn" onclick="addToCart(key)">Add To Cart</button>
         </div>
     `;
     main.appendChild(item_div);
   }
+
+   const addToCart = (key) => {
+    // get item has key param
+    let item = data[key];// lấy item từ dữ liệu products.data
+  
+    let cart = localStorage.getItem("cart");
+    cart = JSON.parse(cart);
+    if (cart == null) {
+      cart = [
+        {
+          product: item,
+          quantity: 1,
+        },
+      ];
+      localStorage.setItem("cart", JSON.stringify(cart));
+    } else {
+      for (product_item of cart) {
+        if (product_item.product.name == item.name) {
+          // Xử lý trùng item đã thêm vào giỏ hàng
+          product_item.quantity += 1;
+          localStorage.setItem("cart", JSON.stringify(cart));
+          return;
+        }
+      }
+      cart.push({
+        product: item,
+        quantity: 1,
+      });
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
+  };
+  
+ 
