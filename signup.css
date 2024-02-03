@@ -13,7 +13,8 @@
  width: 100%;
  height: 100vh;
  padding-top: 150px;
-    background-image: url(https://images.pexels.com/photos/40663/fireworks-rocket-new-year-s-day-new-year-s-eve-40663.jpeg?cs=srgb&dl=pexels-pixabay-40663.jpg&fm=jpg);
+ background-image: url(https://static.videezy.com/system/resources/thumbnails/000/012/191/original/red-and-green-fireworks-with-peony-effect-glowing-on-dark-night-in-4k.jpg) ;
+background-repeat:  round;
 }
 /* navbar */
 
@@ -24,6 +25,7 @@ a{
     width: 100%;
     z-index: 99;
   margin: auto;
+  border-bottom:1px solid #545454;
 position: fixed;
 background-color: #2b2a2c;
 align-items: center;
@@ -167,7 +169,7 @@ color: aliceblue;
 }
 #form {
     width: 100%;
-    height: 95%;
+    height: 100%;
     
 
 }

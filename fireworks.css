@@ -21,6 +21,7 @@
   .navbar-container{ 
       width: 100%;
       z-index: 99;
+      border-bottom:1px solid #545454;
     margin: auto;
   position: fixed;
   background-color: #2b2a2c;

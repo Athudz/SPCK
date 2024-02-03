@@ -15,9 +15,12 @@ if ( login_form !== '' ) {
         for( key in user_email_list ) {
             if ( email == user_email_list[key] && password == user_password_list[key] ) {
                 alert('Login Success');
+                window.location.href = "index.html";
+            }
+            else {
+                alert('Email or Password is incorrect');
+                return;
             }
         }
-    
-        alert("Login Unsuccessful");
     })
 }

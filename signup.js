@@ -69,7 +69,7 @@ function noti( message, email, password, repassword,  name, date, status ) {
     document.querySelector('.repassword-input').value = repassword;
     document.querySelector('.name-input').value = name;
     document.querySelector('.date-input').value = date;
-    let noti = document.querySelector('#noti-mess')
+    let noti = document.getElementById('noti-mess')
     noti.innerHTML = message;
     if ( status == 1 ) {
         noti.style.color = '#00ff26';
